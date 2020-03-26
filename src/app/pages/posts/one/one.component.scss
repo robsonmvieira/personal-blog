@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container--img{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+.img-responsive{
+  margin: 0 auto;
+  width: 880px;
+  height: 400px;
+  & img {
+    border-radius: 10px;
+  }
+}
+.container--title {
+  max-width: 750px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  & .title {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 32px;
+    color: #222;
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  & .container--info--post {
+    display: flex;
+    margin-bottom: 30px;
+
+    & .item--info {
+      font-family: 'Lora', serif;
+      margin-right: 20px;
+      line-height: 20px;
+      font-size: .7em;
+    }
+  }
+}
+p {
+  font-family: 'Lora', serif;
+  line-height: 30px;
+  color: #222222;
+  font-size: 1.1em;
+}
+
+.container--lasts-posts {
+  display: flex;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  justify-items: center;
+  & img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  & .previus--posts{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    & .container--last--post {
+      margin-top: 30px;
+    }
+  }
+}
+.container--last--post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  & span {
+    margin-bottom: 10px;
+  }
+}
+.container-related-posts{
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  & .wapper--post {
+    padding: 0 15px;
+    & a {
+      font-family: 'Lora', serif;
+      color: #222222;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.container-img-related-post {
+  width: 273px;
+  height: 186px;
+  min-height: 100%;
+
+  & img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+}
+
+.container--comments {
+  width: 100%;
+  max-width: 750px;
+  margin: 140px auto;
+  display: flex;
+  & .container--comment {
+   font-size: .8em;
+   line-height: 20px;
+   font-weight: 400;
+  }
+}
