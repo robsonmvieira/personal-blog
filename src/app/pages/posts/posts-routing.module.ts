@@ -5,19 +5,20 @@ import { OneComponent } from './one/one.component';
 
 const routes: Routes = [
   {
-    path: '', component: ListComponent, children:[
-    ]
+    path: '', component: ListComponent
+
   },
   {
     path: 'detalhe/:id', component: OneComponent
   }
-]
+];
 
 @NgModule({
  declarations: [],
- imports:[
+ imports: [
    RouterModule.forChild(routes)
  ]
 
 })
 export class PostingRouterModule {}
+
