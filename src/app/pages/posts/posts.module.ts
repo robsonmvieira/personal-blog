@@ -10,6 +10,7 @@ import { PostingRouterModule } from './posts-routing.module';
 
 @NgModule({
   declarations: [ListComponent, AddComponent, RemoveComponent, OneComponent],
+  exports: [ListComponent, OneComponent],
   imports: [
     CommonModule,
     PostingRouterModule
