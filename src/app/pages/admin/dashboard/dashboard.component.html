@@ -26,30 +26,16 @@
   <div class="container--dashboard">
     <div class="container--sidebar">
       <ul class="sidebar--list">
-        <li class="sidebar--item">
-          <img src="../../../../assets/img/admin-img/list.svg" alt="" srcset="">
-          <span class="sidebar--title">Categories</span>
-        </li>
-        <li class="sidebar--item">
-          <img src="../../../../assets/img/admin-img/discount.svg" alt="" srcset="">
-          <span class="sidebar--title">Tags</span>
-        </li>
-        <li class="sidebar--item">
-          <img src="../../../../assets/img/admin-img/blog.svg" alt="" srcset="">
-          <span class="sidebar--title">Posts</span>
-        </li>
-        <li class="sidebar--item">
-          <img src="../../../../assets/img/admin-img/comment.svg" alt="" srcset="">
-          <span class="sidebar--title">Comments</span>
-        </li>
-        <li class="sidebar--item">
-          <img src="../../../../assets/img/admin-img/support.svg" alt="" srcset="">
-          <span class="sidebar--title">Users</span>
+        <li class="sidebar--item" *ngFor="let item of categories" (click)='selected(item)'>
+          <img [src]="item.svg" alt="" srcset="">
+          <span class="sidebar--title">{{ item.title }}</span>
         </li>
       </ul>
     </div>
     <div class="container--main">
-
+      <h4 class="label--component--selected" *ngIf="itemSelected">{{ itemSelected }}</h4>
+      <h4 class="label--component--selected" *ngIf="!itemSelected">Dashboard</h4>
+      <app-admin></app-admin>
     </div>
   </div>
 </div>
