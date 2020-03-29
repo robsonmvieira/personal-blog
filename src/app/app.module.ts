@@ -8,7 +8,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { ListComponent } from './pages/posts/list/list.component';
+import { PostListComponent } from './pages/posts/list/post-list.component';
 import { OneComponent } from './pages/posts/one/one.component';
 
 @NgModule({
@@ -19,7 +19,7 @@ import { OneComponent } from './pages/posts/one/one.component';
     AboutComponent,
     ContactComponent,
     LoginComponent,
-    ListComponent,
+    PostListComponent,
     OneComponent
 
   ],
