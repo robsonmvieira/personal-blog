@@ -1,61 +1,14 @@
 <div class='container'>
   <span>Last Posts</span>
   <ul class='list--container'>
-    <li class='list--item'>
+    <li class='list--item' *ngFor="let post of posts; let i=index">
       <a href='' class='list--link'>
-        Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Nam perferendis atque minima at! Explicabo, quae.
-      </a>
-    </li>
-    <li class='list--item'>
-      <a href='' class='list--link'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, autem?
-      </a>
-    </li>
-    <li class='list--item'>
-      <a href='' class='list--link'>
-        Lorem ipsum dolor sit amet.
-      </a>
-    </li>
-    <li class='list--item'>
-      <a href='' class='list--link'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Qui, expedita minima.
-      </a>
-    </li>
-    <li class='list--item'>
-      <a href='' class='list--link'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      </a>
-    </li>
-    <li class='list--item'>
-      <a href='' class='list--link'>
-        Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Rerum commodi nulla esse.
-      </a>
-    </li>
-    <li class='list--item'>
-      <a href='' class='list--link'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ratione.
-      </a>
-    </li>
-    <li class='list--item'>
-      <a href='' class='list--link'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing.
-    </a>
-    </li>
-    <li class='list--item'>
-      <a href='' class='list--link'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsum?
-      </a>
-    </li>
-    <li class='list--item'>
-      <a href='' class='list--link'>
-        Lorem ipsum dolor sit amet.
+        {{ post.title | slice:0: 50 }} ... - editar | deletar
       </a>
     </li>
   </ul>
   <div class="container--btn--add">
-      <img src="../../../../assets/img/admin-img/mais.svg" alt="" srcset="">
+    <img src="../../../../assets/img/admin-img/mais.svg" alt="" srcset="">
   </div>
+  <app-category-add></app-category-add >
 </div>
