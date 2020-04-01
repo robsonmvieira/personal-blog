@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { categories } from '../../../helpers/resources/category-item';
+import { itensMenu } from '../../../helpers/resources/menu-item';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,7 +7,9 @@ import { categories } from '../../../helpers/resources/category-item';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  categories = categories
+  itemsMenu = itensMenu
+
+
   itemSelected: string
   constructor() { }
 
