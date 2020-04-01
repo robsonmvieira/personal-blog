@@ -1,4 +1,4 @@
-export const categories = [
+export const itensMenu = [
   {
     id: 1,
     title: 'Categories',
