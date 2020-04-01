@@ -1,14 +1,14 @@
 <div class='container'>
   <span>Last Posts</span>
   <ul class='list--container'>
-    <li class='list--item' *ngFor="let post of posts; let i=index">
+    <li class='list--item' *ngFor="let category of categories; let i=index">
       <a href='' class='list--link'>
-        {{ post.title | slice:0: 50 }} ... - editar | deletar
+        {{ category.title }} ... - editar | deletar
       </a>
     </li>
   </ul>
   <div class="container--btn--add">
-    <img src="../../../../assets/img/admin-img/mais.svg" alt="" srcset="">
+    <img src="../../../../assets/img/admin-img/mais.svg" (click)='showModalNewCategory()' />
   </div>
-  <app-category-add></app-category-add >
+  <app-category-add *ngIf="addNewCategory"></app-category-add >
 </div>

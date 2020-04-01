@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { posts } from 'src/app/helpers/resources/posts';
+import { categories } from 'src/app/helpers/resources/categories';
 
 @Component({
   selector: 'app-category-list',
@@ -7,11 +8,14 @@ import { posts } from 'src/app/helpers/resources/posts';
   styleUrls: ['./category-list.component.scss']
 })
 export class CategoryListComponent implements OnInit {
-  posts = posts
-
+  categories = categories
+  addNewCategory = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  showModalNewCategory() {
+    this.addNewCategory = !this.addNewCategory;
+  }
 }
