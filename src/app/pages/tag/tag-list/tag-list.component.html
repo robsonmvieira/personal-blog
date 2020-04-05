@@ -1,1 +1,14 @@
-<p>tag-list works!</p>
+<div class='container'>
+  <span>Last Tags</span>
+  <ul class='list--container'>
+    <li class='list--item' *ngFor="let tag of tags; let i=index">
+      <a href='' class='list--link'>
+        {{ tag.title }} ... - editar | deletar
+      </a>
+    </li>
+  </ul>
+  <div class="container--btn--add">
+    <img src="../../../../assets/img/admin-img/mais.svg" (click)='showModalNewTag()' />
+  </div>
+  <app-add-tag *ngIf="addNewTag"></app-add-tag>
+</div>
