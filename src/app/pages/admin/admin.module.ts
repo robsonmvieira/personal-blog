@@ -6,6 +6,8 @@ import { EditorModule } from '@tinymce/tinymce-angular';
 import { AdminComponent } from './admin.component';
 import { CategoryListComponent } from '../category/category-list/category-list.component';
 import { CategoryAddComponent } from '../category/category-add/category-add.component';
+import { AddTagComponent } from '../tag/add-tag/add-tag.component';
+import { TagListComponent } from '../tag/tag-list/tag-list.component';
 
 
 @NgModule({
@@ -13,7 +15,10 @@ import { CategoryAddComponent } from '../category/category-add/category-add.comp
     DashboardComponent,
     AdminComponent,
     CategoryAddComponent,
-    CategoryListComponent],
+    CategoryListComponent,
+    TagListComponent,
+    AddTagComponent
+  ],
   imports: [
     CommonModule,
     AdminRouterModule,

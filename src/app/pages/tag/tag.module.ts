@@ -9,6 +9,7 @@ import { AddTagComponent } from './add-tag/add-tag.component';
   declarations: [TagListComponent, AddTagComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [TagListComponent, AddTagComponent]
 })
 export class TagModule { }
