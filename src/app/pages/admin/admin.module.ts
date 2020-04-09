@@ -8,6 +8,8 @@ import { CategoryListComponent } from '../category/category-list/category-list.c
 import { CategoryAddComponent } from '../category/category-add/category-add.component';
 import { AddTagComponent } from '../tag/add-tag/add-tag.component';
 import { TagListComponent } from '../tag/tag-list/tag-list.component';
+import { AddPostComponent } from '../posts/add/add.component';
+import { PostListComponent } from '../posts/list/post-list.component';
 
 
 @NgModule({
@@ -17,12 +19,14 @@ import { TagListComponent } from '../tag/tag-list/tag-list.component';
     CategoryAddComponent,
     CategoryListComponent,
     TagListComponent,
-    AddTagComponent
+    AddTagComponent,
+    PostListComponent,
+    AddPostComponent
   ],
   imports: [
     CommonModule,
     AdminRouterModule,
-    EditorModule
+    EditorModule,
   ]
 })
 export class AdminModule { }
