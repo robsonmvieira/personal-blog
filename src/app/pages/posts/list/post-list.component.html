@@ -1,6 +1,14 @@
-<app-one></app-one>
-<app-one></app-one>
-<app-one></app-one>
-<app-one></app-one>
-<app-one></app-one>
-<app-one></app-one>
+<div class='container'>
+  <span>Last Posts</span>
+  <ul class='list--container'>
+    <li class='list--item' *ngFor="let post of posts; let i=index">
+      <a href='' class='list--link'>
+        {{ post.title }} ... - editar | deletar
+      </a>
+    </li>
+  </ul>
+  <div class="container--btn--add">
+    <img src="../../../../assets/img/admin-img/mais.svg" (click)='showModalNewPost()' />
+  </div>
+  <app-add-post *ngIf="addNewPost"></app-add-post>
+</div>
