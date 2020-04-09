@@ -1,3 +1,4 @@
+import { AddPostComponent } from './pages/posts/add/add.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -19,8 +20,8 @@ import { OneComponent } from './pages/posts/one/one.component';
     AboutComponent,
     ContactComponent,
     LoginComponent,
-    PostListComponent,
-    OneComponent
+    OneComponent,
+
 
   ],
   imports: [
