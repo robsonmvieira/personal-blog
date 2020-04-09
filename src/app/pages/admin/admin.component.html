@@ -1,2 +1,3 @@
-<app-category-list *ngIf="isOn"></app-category-list>
-<app-tag-list *ngIf="isOn"></app-tag-list>
+<app-category-list *ngIf="(selected == 'Categories')"></app-category-list>
+<app-tag-list *ngIf="(selected == 'Tags')"></app-tag-list>
+<app-post-list *ngIf="(selected == 'Posts')"></app-post-list>
