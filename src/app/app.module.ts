@@ -1,4 +1,3 @@
-import { AddPostComponent } from './pages/posts/add/add.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,8 +8,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { PostListComponent } from './pages/posts/list/post-list.component';
 import { OneComponent } from './pages/posts/one/one.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +26,7 @@ import { OneComponent } from './pages/posts/one/one.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

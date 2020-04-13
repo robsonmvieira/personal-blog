@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminRouterModule } from './admin-routing.module';
-import { EditorModule } from '@tinymce/tinymce-angular';
 import { AdminComponent } from './admin.component';
 import { CategoryListComponent } from '../category/category-list/category-list.component';
 import { CategoryAddComponent } from '../category/category-add/category-add.component';
@@ -11,6 +10,9 @@ import { TagListComponent } from '../tag/tag-list/tag-list.component';
 import { AddPostComponent } from '../posts/add/add.component';
 import { PostListComponent } from '../posts/list/post-list.component';
 
+
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,13 @@ import { PostListComponent } from '../posts/list/post-list.component';
     TagListComponent,
     AddTagComponent,
     PostListComponent,
-    AddPostComponent
+    AddPostComponent,
   ],
   imports: [
     CommonModule,
     AdminRouterModule,
-    EditorModule,
+    AngularEditorModule,
+    HttpClientModule,
   ]
 })
 export class AdminModule { }
