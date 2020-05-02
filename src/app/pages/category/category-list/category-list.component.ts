@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { posts } from 'src/app/helpers/resources/posts';
 import { categories } from 'src/app/helpers/resources/categories';
 
 @Component({
