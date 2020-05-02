@@ -13,6 +13,8 @@ import { PostListComponent } from '../posts/list/post-list.component';
 
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { HttpClientModule } from '@angular/common/http';
+import { CommentAddComponent } from '../comment/comment-add/comment-add.component';
+import { CommentListComponent } from '../comment/comment-list/comment-list.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     AddTagComponent,
     PostListComponent,
     AddPostComponent,
+    CommentListComponent,
+    CommentAddComponent
   ],
   imports: [
     CommonModule,
