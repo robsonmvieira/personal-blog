@@ -28,6 +28,9 @@ const routes: Routes = [
   },
   {
     path: 'categories', loadChildren: () => import('./pages/category/category.module').then(c => c.CategoryModule)
+  },
+  {
+    path: 'comments', loadChildren: () => import('./pages/comment/comment.module').then(c => c.CommentModule)
   }
 ];
 
