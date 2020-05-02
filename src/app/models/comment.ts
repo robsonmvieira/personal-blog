@@ -3,7 +3,7 @@ import { User } from './user';
 
 export class Comment {
   public id: number;
-  public post: Post;
+  public post_id: number;
   public content: string;
-  public user_id: User;
+  public user_id: number;
 }
