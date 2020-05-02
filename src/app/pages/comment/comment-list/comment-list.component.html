@@ -1,1 +1,15 @@
-<p>comment-list works!</p>
+<div class='container'>
+  <span>Last comments</span>
+  <ul class='list--container'>
+    <li class='list--item' *ngFor="let comment of comments; let i=index">
+      <a href='' class='list--link'>
+        {{ comment.content }} ... - editar | deletar
+      </a>
+      <p>ie..</p>
+    </li>
+  </ul>
+  <div class="container--btn--add">
+    <img src="../../../../assets/img/admin-img/mais.svg" (click)='showModalNewComment()' />
+  </div>
+  <app-comment-add *ngIf="addNewComment"></app-comment-add >
+</div>
